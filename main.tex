@@ -1,0 +1,296 @@
+%-------------------------
+% Resume in Latex
+% Author : Arpit Dwivedi
+%
+% 
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in} 
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+%\begin{flushright}
+%  % \vspace{-4pt}
+%  \color{gray}
+%  \item
+%  Last Updated on January 12th, 2024
+%\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Arpit Dwivedi} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/arpitdwi}{\underline{github.com/arpitdwi}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/arpitdwi}{\underline{linkedin.com/in/arpitdwi}} $  $
+    \faIcon{envelope}
+    \href{mailto:arpitdwived@gmail.com}
+    {\underline{arpitdwived@gmail.com}}
+    \faIcon{phone-alt}
+    {\underline{+91-8976058580}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\vspace{-5pt}
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indian Institute of Technology Kharagpur}{2017 - 2022}
+      {B.Tech + M.Tech (Dual Degree)}{CGPA: 9.2/10.0}
+      \resumeItemListStart
+      \resumeItem{\textbf{Major:} Electronics and Electrical Communication Engineering}
+      \resumeItem{\textbf{Minor:} Computer Science and Engineering}
+      \resumeItem{\textbf{Micro:} Entrepreneurship and Innovation}
+      \resumeItemListEnd
+      
+      
+\vspace{5pt}      
+
+    \resumeSubheading
+      {Delhi Public School, Navi Mumbai}{2017}
+      {All India Senior School Certificate Examination}{Marks: 94.6\%}
+      
+\vspace{5pt}
+
+    \resumeSubheading
+      {Delhi Public School, Navi Mumbai}{2015}
+      {All India Secondary School Examination}{CGPA: 10/10}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {\textbf{Data and Applied Scientist, Bing Ads, Microsoft}}{Jun 2022 - Present}
+        \resumeItemListStart
+            \resumeItem{Fine-tuned XLM-Roberta based multilingual models pretrained on ad specific data for predicting the relevance between query-ad pairs with ROC-AUC score of 91.96\%, marking a 4-point improvement from the baseline model}
+            \resumeItem{Innovated GPT prompts to generate relevance labels resulting in improvement of over 5 AUC points compared to human labels and enabling the transition from human-labeled training data to GPT-generated labels}
+            \resumeItem{Explored architectures for long document understanding such as Reformer and Longformer to facilitate comprehensive understanding of landing pages and significantly reduce training time}
+            \resumeItem{Carried out knowledge distillation to train compact BERT models and DNNs for efficient online deployment}
+            \resumeItem{Engineered novel features and trained models using curriculum learning strategies to enhance model robustness}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Data and Applied Scientist Intern, Bing Ads, Microsoft}}{May 2021 - Jul 2021}
+        \resumeItemListStart
+            \resumeItem{Worked on identifying spoof domains in ads using Siamese Convolutional Neural Networks}
+            \resumeItem{Curated a comprehensive dataset for training using manual generation techniques and achieved a validation ROC-AUC score of 98.93\% using the Triplet loss function}
+            \resumeItem{Leveraged Faiss for efficient nearest-neighbor searches, enabling the rapid identification of existing spoof URLs which could subsequently be used as a dataset}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Computer Vision Intern, Proof of Performance Data Services Pvt Ltd}}{Apr 2020 - Jun 2020}
+        \resumeItemListStart
+            \resumeItem{Deployed You Only Look Once  algorithm to develop a tree detection system, enabling the identification of all trees within a given image or video and classified them with an accuracy of 88\% using convolutional neural networks}
+            \resumeItem{Implemented non-maximum suppression and performed image processing using OpenCV to filter out the false positives post tree detection leading to an increase in precision}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Natural Language Processing Intern, Glasssquid.io}}{Oct 2019 - Jan 2020}
+        \resumeItemListStart
+            \resumeItem{Built a classifier to distinguish between IT and non-IT jobs using their job descriptions with an accuracy of 93\% using TF-IDF weighted Word2Vec and XGBoost}
+            \resumeItem{Utilized SQL for data extraction and analysed the trends in skills and experience of users, their preferred job roles, location etc. to get valuable business insights}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd 
+
+% -------------------- PAPERS AND PUBLICATIONS --------------------
+\vspace{-5pt}
+\section{Papers and Publications}
+
+\begingroup
+\renewcommand{\section}[2]{}%
+%\renewcommand{\chapter}[2]{}% for other classes
+\begin{thebibliography}{}
+\bibitem{p1} Rima Hazra, Arpit Dwivedi and Animesh Mukherjee. Is this bug severe? A text-cum-graph based model for bug severity prediction. \emph{Joint European Conference on Machine Learning and Knowledge Discovery in Databases}, pp. 236-252. Springer, 2022. 
+
+\bibitem{p2} Bishal Santra, Ravi Ghadia, Arpit Dwivedi, Manish Gupta and Pawan Goyal. CORAL: Contextual Response Retrievability Loss Function for Training Dialog Generation Models. \emph{Preprint,} \href{https://arxiv.org/abs/2205.10558v2}{arXiv:2205.10558v2}. 
+\end{thebibliography}
+\endgroup
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Relevant Coursework}{: Algorithms, Machine Learning, Deep Learning, Matrix Algebra, Probability and Stochastic Processes, Image Processing, Big Data Processing, Natural Language Processing }
+     
+     \textbf{Languages and Libraries}{: C/C++, Python, SQL, \LaTeX, PyTorch, Hugging Face, Numpy, Pandas, Matplotlib, Scikit-Learn, OpenCV, NetworkX, PySpark, Streamlit}
+     
+     \textbf{Systems / Platforms}{: Git, Windows, Linux}
+     
+     % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+     % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+    }}
+ \end{itemize}
+
+% -------------------- PROJECTS --------------------
+\vspace{-5pt}
+\section{Projects and Competitions}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{Discourse mutual information based evaluation metric}}{Mar 2022 - May 2022}
+        \resumeItemListStart
+            \resumeItem{Proposed a novel unreferenced metric for dialogue evaluation using transformer encoders pre-trained using Discourse Mutual Information based loss function that enabled the model to capture intricate relationships}
+            \resumeItem{Created a response pool for scoring and outperformed strong baselines on correlation with human judgements}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{Multilingual news article similarity }}{Mar 2022 - Apr 2022}
+        \resumeItemListStart
+            \resumeItem{Measured the similarity between mono/cross lingual news article pairs by fine tuning encoders and stacking}
+            \resumeItem{Used mBERT models for predicting six different labels such as geography, narrative, style etc. and an artificial neural network (ANN) as the meta model to get the final similarity score}
+            \resumeItem{Utilized Mean Squared Error (MSE) loss during model training, resulting in a notable Pearson’s Correlation Coefficient of 0.702 on the final evaluation dataset }
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+        {\textbf{RL based training of generative dialogue systems }}{Jul 2021 - Feb 2022}
+        \resumeItemListStart
+            \resumeItem{Trained transformer based generative dialogue systems using scores from retrieval dialogue systems instead of using traditional cross entropy loss based methods that solely rely on the ground truth response}
+            \resumeItem{Used scores from retrieval models like BERT and ESIM as reward for training the model using Reinforce algorithm}
+            \resumeItem{The final model demonstrated significant improvements in response quality upon evaluation in terms of diversity as well as coherence with the context as compared to the conventional generative dialogue systems}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{AbInBev Maverick 2.0 Hackathon }}{Apr 2021 - May 2021}
+        \resumeItemListStart
+            \resumeItem{Developed an application to recommend customized on-invoice and off-invoice discounts. Reached the grand finale among 750+ competing teams and was applauded by the panelists for outstanding approach}
+            \resumeItem{Employed feature engineering and outlier detection techniques before training a combination of classification and regression models to accurately predict each component of the discount using an ensemble of gradient boosted trees}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Early identification of severe bugs in Ubuntu}}{Jan 2021 - Apr 2021}
+        \resumeItemListStart
+            \resumeItem{Predicted the severity of new bugs in advance using text, graph and metadata-based features with 74\% accuracy }
+            \resumeItem{Constructed various networks such as a bug-bug network based on affected packages using the NetworkX library and extracted graph features like Degree, PageRank, and Clustering Coefficient}
+            \resumeItem{Used Doc2Vec and SBERT for learning the text features present in the bug descriptions and comments}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Imposter Detection}}{Oct 2020 - Nov 2020}
+        \resumeItemListStart
+            \resumeItem{Authenticated users on the basis of their mouse activity using features like click time, pause time, cursor velocity}
+            \resumeItem{Used a supervised self organizing map (SOM) on top of an unsupervised SOM to make predictions with 83\% recall}
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+% -------------------- AWARDS AND ACHIEVEMENTS --------------------
+\vspace{-5pt}
+\section{Awards and Achievements}
+      \resumeItemListStart
+      \resumeItem{Secured All India Rank 946 in JEE Advanced 2017 among 150K+ students who appeared for the examination}
+      \resumeItem{Secured All India Rank 1002 in JEE Mains 2017 among nearly 1.2M students who appeared for the examination}
+      \resumeItem{Certified for being in the top 1 percentile in National Standard Examination in Physics held in November 2016}
+      \resumeItem{Secured All India Rank 192 in Kishore Vaigyanik Protsahan Yojana 2015 conducted by Indian Institute of Science}
+      \resumeItem{Cleared National Talent Search Examination in Class X and was one of the 775 students selected for the scholarship}
+      \resumeItemListEnd
+
+\end{document}
